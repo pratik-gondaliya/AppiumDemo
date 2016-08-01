@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test1">
+    <classes>
+      <class name="com.volProject.AppiumDemo.SwipeTest"/>
+      <class name="com.volProject.AppiumDemo.CalcTest"/>
+      <class name="com.volProject.AppiumDemo.SecondTest"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <classes>
+      <class name="com.volProject.AppiumDemo.OpenSettings"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.volProject.AppiumDemo.OpenSettings">
+        <methods>
+          <include name="destoryOpenSettingClass"/>
+          <include name="initOpenSettingclass"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.OpenSettings -->
+      <class name="com.volProject.AppiumDemo.SecondTest">
+        <methods>
+          <include name="beforeClassSecondTest"/>
+          <include name="test1"/>
+          <include name="afterClassSecondTest"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.SecondTest -->
+      <class name="com.volProject.AppiumDemo.CalcTest">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="afterClassFirstTest"/>
+          <include name="beforeClassFirstTest"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.CalcTest -->
+      <class name="com.volProject.AppiumDemo.SwipeTest">
+        <methods>
+          <include name="beforeClassSwipeTest"/>
+          <include name="afterClassSwipeTest"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.SwipeTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <classes>
+      <class name="com.volProject.AppiumDemo.SecondTest">
+        <methods>
+          <include name="beforeClassSecondTest"/>
+          <include name="afterClassSecondTest"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.SecondTest -->
+      <class name="com.volProject.AppiumDemo.OpenSettings">
+        <methods>
+          <include name="test1"/>
+          <include name="destoryOpenSettingClass"/>
+          <include name="initOpenSettingclass"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.OpenSettings -->
+      <class name="com.volProject.AppiumDemo.CalcTest">
+        <methods>
+          <include name="afterClassFirstTest"/>
+          <include name="beforeClassFirstTest"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.CalcTest -->
+      <class name="com.volProject.AppiumDemo.SwipeTest">
+        <methods>
+          <include name="beforeClassSwipeTest"/>
+          <include name="afterClassSwipeTest"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.SwipeTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

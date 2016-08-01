@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.volProject.AppiumDemo.firstTest"/>
+      <class name="com.volProject.AppiumDemo.secondTest"/>
+      <class name="com.volProject.AppiumDemo.SwipeTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.volProject.AppiumDemo.firstTest">
+        <methods>
+          <include name="fF"/>
+          <include name="afterClassF"/>
+          <include name="beforeClassF"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.firstTest -->
+      <class name="com.volProject.AppiumDemo.SwipeTest">
+        <methods>
+          <include name="afterClassF"/>
+          <include name="beforeClassF"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.SwipeTest -->
+      <class name="com.volProject.AppiumDemo.secondTest">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.volProject.AppiumDemo.secondTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

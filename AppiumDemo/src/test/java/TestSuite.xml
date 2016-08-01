@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+    <classes> 
+    	<class name="com.volProject.AppiumDemo.SwipeTest"/>
+    	<class name="com.volProject.AppiumDemo.CalcTest"/>
+	    <class name="com.volProject.AppiumDemo.SecondTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes> 
+    	<class name="com.volProject.AppiumDemo.OpenSettings"/>
+    </classes>
+  </test> <!--  Test -->
+</suite> <!-- Suite -->
